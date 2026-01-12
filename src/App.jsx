@@ -1,28 +1,31 @@
-import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+import React from "react";
+import { BrowserRouter, Routes, Route, Link, NavLink } from "react-router-dom";
+import Logo from "./components/Logo";
 import Home from "./pages/Home";
 import Projects from "./pages/Projects";
 import Contact from "./pages/Contact";
 import About from "./pages/about";
 import Error404 from "./components/Error404";
+import Header from "./components/Header";
 
 function App() {
   return (
     <>
-      <BrowserRouter>
-        <nav className="flex gap-4">
-          <Link to={"/"}>Home</Link>
-          <Link to={"/about"}>About</Link>
-          <Link to={"/projects"}>Projects</Link>
-          <Link to={"/contact"}>Contact</Link>
-        </nav>
-        <Routes>
-          <Route path="/" element={<Home></Home>}></Route>
-          <Route path="/about" element={<About></About>}></Route>
-          <Route path="/projects" element={<Projects></Projects>}></Route>
-          <Route path="/contact" element={<Contact></Contact>}></Route>
-          <Route path="*" element={<Error404></Error404>}></Route>
-        </Routes>
-      </BrowserRouter>
+      <div className="min-h-screen bg-primary-bg text-primary-txt">
+        <BrowserRouter>
+          <Header></Header>
+
+          <main className="p-8">
+            <Routes>
+              <Route path="/" element={<Home></Home>}></Route>
+              <Route path="/about" element={<About></About>}></Route>
+              <Route path="/projects" element={<Projects></Projects>}></Route>
+              <Route path="/contact" element={<Contact></Contact>}></Route>
+              <Route path="*" element={<Error404></Error404>}></Route>
+            </Routes>
+          </main>
+        </BrowserRouter>
+      </div>
     </>
   );
 }
