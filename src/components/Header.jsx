@@ -3,7 +3,7 @@ import Logo from "./Logo";
 import NavLinks from "./NavLinks";
 
 const Header = () => {
-  const [isOpen, setIsOpen] = useState(true);
+  const [isOpen, setIsOpen] = useState(false);
 
   const toggleNavbar = () => {
     setIsOpen(!isOpen);
