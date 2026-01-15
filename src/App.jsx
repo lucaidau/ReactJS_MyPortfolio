@@ -7,6 +7,7 @@ import Contact from "./pages/Contact";
 import About from "./pages/about";
 import Error404 from "./components/Error404";
 import Header from "./components/Header";
+import Hero from "./components/Hero";
 
 function App() {
   return (
@@ -17,7 +18,15 @@ function App() {
 
           <main className="p-8">
             <Routes>
-              <Route path="/" element={<Home></Home>}></Route>
+              <Route
+                path="/"
+                element={
+                  <>
+                    <Hero></Hero>
+                    <Home></Home>
+                  </>
+                }
+              ></Route>
               <Route path="/about" element={<About></About>}></Route>
               <Route path="/projects" element={<Projects></Projects>}></Route>
               <Route path="/contact" element={<Contact></Contact>}></Route>
