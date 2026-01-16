@@ -12,7 +12,7 @@ import Hero from "./components/Hero";
 function App() {
   return (
     <>
-      <div className="min-h-screen bg-primary-bg text-primary-txt">
+      <div className="min-h-screen bg-primary-bg text-primary-txt font-mono">
         <BrowserRouter>
           <Header></Header>
 
