@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
@@ -17,12 +18,18 @@ const Hero = () => {
         </p>
 
         <div className="flex gap-4 pt-4">
-          <button className="px-8 py-3 bg-primary-accent text-primary-txt rounded-lg hover:bg-soft-accent transition-all">
+          <Link
+            to="/projects"
+            className="px-8 py-3 bg-primary-accent text-primary-txt rounded-lg hover:bg-soft-accent transition-all"
+          >
             View Projects
-          </button>
-          <button className="px-8 py-3 border border-primary-accent text-primary-accent rounded-lg hover:bg-primary-accent/10 transition-all">
+          </Link>
+          <Link
+            to="contact"
+            className="px-8 py-3 border border-primary-accent text-primary-accent rounded-lg hover:bg-primary-accent/10 transition-all"
+          >
             Contact Me
-          </button>
+          </Link>
         </div>
       </div>
 
