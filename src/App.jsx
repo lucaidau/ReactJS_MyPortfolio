@@ -1,12 +1,11 @@
 import React from "react";
 import { BrowserRouter, Routes, Route, Link, NavLink } from "react-router-dom";
-import Logo from "./components/Logo";
+
 import Home from "./pages/Home";
 import Projects from "./pages/Projects";
 import Contact from "./pages/Contact";
 import Error404 from "./components/Error404";
 import Header from "./components/Header";
-import Hero from "./components/Hero";
 
 function App() {
   return (
@@ -21,7 +20,6 @@ function App() {
                 path="/"
                 element={
                   <>
-                    <Hero></Hero>
                     <Home></Home>
                   </>
                 }

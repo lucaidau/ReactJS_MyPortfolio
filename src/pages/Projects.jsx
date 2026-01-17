@@ -2,12 +2,21 @@ import React from "react";
 
 const projectData = [
   {
-    title: "Weather App",
-    description: "A simple weather application using a public weather API.",
-    tech: ["React", "Tailwind", "Vite", "Restful API"],
-    github: "#",
-    link: "#",
-    image: "",
+    title: "Portfolio",
+    description: "Website introduce about myself",
+    tech: ["React", "Tailwind", "Vite"],
+    github: "https://github.com/lucaidau/ReactJS_MyPortfolio",
+    link: "https://react-js-my-portfolio-six.vercel.app/",
+    image: "/projectImg/portfolio.png",
+  },
+  {
+    title: "Todo App",
+    description:
+      "A simple Todo application with CRUD and using local storage to store tasks",
+    tech: ["React", "Tailwind", "Vite"],
+    github: "https://github.com/lucaidau/ReactJS_Todo_App",
+    link: "https://react-js-todo-app-eight.vercel.app/",
+    image: "/projectImg/todoApp.png",
   },
   {
     title: "Movie App",
@@ -17,14 +26,6 @@ const projectData = [
     github: "https://github.com/lucaidau/ReactJS_TheMovieApp",
     link: "https://react-js-the-movie-app.vercel.app/",
     image: "/projectImg/movieApp.png",
-  },
-  {
-    title: "Portfolio",
-    description: "Website introduce about myself",
-    tech: ["React", "Tailwind", "Vite"],
-    github: "#",
-    link: "#",
-    image: "https://via.placeholder.com/300x200",
   },
 ];
 
