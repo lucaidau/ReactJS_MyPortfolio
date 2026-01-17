@@ -15,9 +15,7 @@ const NavLinks = ({ onClick }) => {
       <NavLink to={"/"} onClick={onClick} className={baseClass}>
         Home
       </NavLink>
-      <NavLink to={"/about"} onClick={onClick} className={baseClass}>
-        About
-      </NavLink>
+
       <NavLink to={"/projects"} onClick={onClick} className={baseClass}>
         Projects
       </NavLink>

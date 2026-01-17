@@ -4,7 +4,6 @@ import Logo from "./components/Logo";
 import Home from "./pages/Home";
 import Projects from "./pages/Projects";
 import Contact from "./pages/Contact";
-import About from "./pages/about";
 import Error404 from "./components/Error404";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
@@ -27,7 +26,6 @@ function App() {
                   </>
                 }
               ></Route>
-              <Route path="/about" element={<About></About>}></Route>
               <Route path="/projects" element={<Projects></Projects>}></Route>
               <Route path="/contact" element={<Contact></Contact>}></Route>
               <Route path="*" element={<Error404></Error404>}></Route>
