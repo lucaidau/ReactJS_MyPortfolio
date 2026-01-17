@@ -10,19 +10,27 @@ const socialLink = [
 
 const Contact = () => {
   return (
-    <section className="">
-      <div className="">
-        <h1 className="">Get In Touch</h1>
-        <p className="">
+    <section className="min-h-[80vh] flex items-center justify-center px-8">
+      <div className="max-w-2xl text-center space-y-8">
+        <h1 className="text-4xl md:text-6xl font-bold text-primary-border ">
+          Get In Touch
+        </h1>
+        <p className="text-secondary-txt text-lg md:text-xl leading-relaxed max-w-md mx-auto">
           I am currently open to internship opportunities and collaboration.
           Feel free to reach out if you want to work together.
         </p>
 
-        <div className="">
+        <div className="flex flex-wrap justify-center gap-6 pt-4">
           {socialLink.map((link, index) => (
-            <a key={index} href={link.url} className="">
-              <span className="">{link.icon}</span>
-              <span className="">{link.name}</span>
+            <a
+              key={index}
+              href={link.url}
+              className="flex items-center gap-2 px-6 py-3 bg-navbar-bg/20 rounded-full border border-light-divider hover:border-primary-border hover:text-primary-accent transition-all duration-500 group"
+            >
+              <span className="text-lg group-hover:scale-120 transition-transform ">
+                {link.icon}
+              </span>
+              <span className="font-medium">{link.name}</span>
             </a>
           ))}
         </div>
