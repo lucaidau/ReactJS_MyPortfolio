@@ -7,16 +7,16 @@ const projectData = [
     tech: ["React", "Tailwind", "Vite", "Restful API"],
     github: "#",
     link: "#",
-    image: "https://via.placeholder.com/300x200",
+    image: "",
   },
   {
     title: "Movie App",
     description:
       "A movie browsing application powered by The Movie Database API.",
     tech: ["React", "Tailwind", "Vite", "Restful API"],
-    github: "#",
-    link: "#",
-    image: "https://via.placeholder.com/300x200",
+    github: "https://github.com/lucaidau/ReactJS_TheMovieApp",
+    link: "https://react-js-the-movie-app.vercel.app/",
+    image: "/projectImg/movieApp.png",
   },
   {
     title: "Portfolio",
